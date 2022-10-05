@@ -22,10 +22,41 @@ a {
     border-radius: 50px;
     padding: 2rem 2.5rem;
     text-align: center;
-    
+    box-shadow: 2px 2px 8px #000000cb;
+    position: relative;
+}
+.box::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: white;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1s ease;
 }
 
+.box:hover {
+    background-color: green;
+    cursor: pointer;
+}
+.box:hover::after {
+    padding: 0rem 10rem;
+}
 .box h2 {
     font-size: 1.5rem;
     color: white;
+    text-transform: uppercase;
+    animation: font 1.5s ease infinite ;
+}
+@keyframes font {
+    0%{
+        color: white;
+    }
+    50% {
+        color: #ffffff8c;
+        transform: scale(.9);
+    }
+   
+    
 }
