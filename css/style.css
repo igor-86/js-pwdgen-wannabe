@@ -1,0 +1,31 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+a {
+    text-decoration: none;
+}
+.title {
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.box {
+    max-width: 1000px;
+    width: 80%;
+    margin: 100px auto;
+    background-color: #d52525;
+    border-radius: 50px;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    color: white;
+}
